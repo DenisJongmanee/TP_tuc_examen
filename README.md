@@ -11,4 +11,4 @@ Ce qui a été fait :
 - 3 tests mock
 - Pylint >8/10
 - Coverage >8/10
-- Locust, test de charge sur 3 routes
+- Locust, test de charge : 720 utilisateurs simultanés

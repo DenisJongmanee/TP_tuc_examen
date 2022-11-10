@@ -15,3 +15,11 @@ class User(HttpUser):
     @task 
     def get_items(self):
         self.client.get("/items/")
+    
+    @task
+    def post_trainer(self):
+        self.client.post('/trainers/', json={"name": "dresseur", "birthdate": "2000-10-20"})
+    
+    @task
+    def post_item_trainer(self):
+        self.client.post('/trainers/1/item', json={"name": "potion", "description": "recover hp"})
