@@ -21,7 +21,7 @@ def test_get_trainers():
     """
     response = client.get('/trainers')
     assert response.status_code == 200
-    assert isinstance(response.json()) == isinstance([])
+    assert isinstance(response.json(), list)
 
 def test_get_trainer():
     """
@@ -64,7 +64,7 @@ def test_get_items():
     """
     response = client.get('/items/')
     assert response.status_code == 200
-    assert isinstance(response.json()) == isinstance([])
+    assert isinstance(response.json(), list)
 
 def test_get_pokemons():
     """
@@ -72,7 +72,7 @@ def test_get_pokemons():
     """
     response = client.get('/pokemons/')
     assert response.status_code == 200
-    assert isinstance(response.json()) == isinstance([])
+    assert isinstance(response.json(), list)
 
 def test_get_combat():
     """
